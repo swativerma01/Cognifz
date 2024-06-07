@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#formFeedback {
+  color: red;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  header {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 2em;
+  }
+
+  h2 {
+      font-size: 1.5em;
+  }
+
+  p {
+      font-size: 1em;
+  }
+
+  footer {
+      padding: 5px;
+  }
+
+  form {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      padding: 5px;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+
+  h2 {
+      font-size: 1.2em;
+  }
+
+  p {
+      font-size: 0.9em;
+  }
+
+  footer {
+      font-size: 0.8em;
+      padding: 3px;
+  }
+
+  img {
+      width: 200px;
+  }
+
+  form {
+      padding: 10px;
+  }
+}

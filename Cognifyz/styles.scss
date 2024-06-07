@@ -1,0 +1,121 @@
+// Variables
+$primary-color: #4CAF50;
+$secondary-color: #f0f8ff;
+$font-color: #333;
+$font-family: 'Arial, sans-serif';
+
+// Base Styles
+body {
+  font-family: $font-family;
+  background-color: $secondary-color;
+  color: $font-color;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+main {
+  padding: 20px;
+
+  section {
+    margin-bottom: 20px;
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+footer {
+  background-color: lighten($primary-color, 20%);
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+// Form Styles
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input, textarea, button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  footer {
+    padding: 5px;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px){
+    
+}
